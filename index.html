@@ -1,1 +1,352 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Oli Donoghue</title><style>@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Cormorant+Garamond:ital,wght@1,300&display=swap');:root{--bg:#0c0c0a;--cream:#f0ebe0;--muted:rgba(240,235,224,0.55);--gold:#c8a96e}*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html,body{width:100%;height:100%;background:var(--bg);color:var(--cream);-webkit-font-smoothing:antialiased;overflow:hidden}.bg{position:fixed;inset:0;overflow:hidden;pointer-events:none;isolation:isolate}.orb{position:absolute;border-radius:50%;will-change:transform}.orb-1{top:-10%;right:-5%;width:60%;height:70%;background:radial-gradient(circle,rgba(200,150,40,0.7) 0%,rgba(160,110,20,0.4) 35%,transparent 70%);animation:drift1 18s ease-in-out infinite}.orb-2{bottom:-15%;left:-10%;width:65%;height:65%;background:radial-gradient(circle,rgba(60,130,60,0.6) 0%,rgba(30,90,40,0.35) 35%,transparent 70%);animation:drift2 22s ease-in-out infinite}.orb-3{top:20%;left:20%;width:55%;height:60%;background:radial-gradient(circle,rgba(200,169,110,0.35) 0%,rgba(160,130,80,0.15) 40%,transparent 70%);animation:drift3 15s ease-in-out infinite}@keyframes drift1{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(-60px,50px) scale(1.08)}50%{transform:translate(-30px,90px) scale(0.95)}75%{transform:translate(-80px,40px) scale(1.05)}}@keyframes drift2{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(50px,-40px) scale(1.06)}50%{transform:translate(80px,-70px) scale(1.1)}75%{transform:translate(30px,-30px) scale(0.97)}}@keyframes drift3{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,30px) scale(1.12)}66%{transform:translate(-30px,50px) scale(0.93)}}.page{position:relative;z-index:2;width:100%;height:100vh;padding:clamp(32px,5vw,60px);display:flex;flex-direction:column;justify-content:space-between}.top{display:flex;justify-content:space-between;animation:fu 0.7s ease 0.1s both}.top span{font-family:'DM Mono',monospace;font-size:10px;font-weight:300;letter-spacing:0.4em;text-transform:uppercase;color:var(--muted)}.centre{flex:1;display:flex;flex-direction:column;justify-content:center;padding:24px 0;animation:fu 0.9s ease 0.3s both}.name{line-height:0.88;margin-bottom:clamp(24px,3vw,36px)}.name span{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:300;font-size:clamp(72px,12vw,152px);letter-spacing:-0.025em;color:var(--cream)}.rule{width:36px;height:1px;background:rgba(240,235,224,0.2);margin-bottom:clamp(18px,2.5vw,28px)}.roles{font-family:'DM Mono',monospace;font-size:clamp(10px,1vw,13px);font-weight:300;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted)}.bottom{display:flex;justify-content:space-between;align-items:flex-end;animation:fu 0.7s ease 0.85s both}.contact-label{font-family:'DM Mono',monospace;font-size:10px;font-weight:300;letter-spacing:0.4em;text-transform:uppercase;color:var(--muted)}.cta-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:14px}.cta{display:inline-flex;align-items:center;font-family:'DM Mono',monospace;font-size:11px;font-weight:300;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(200,169,110,0.45);padding:14px 28px;transition:all 0.4s ease;position:relative;overflow:hidden}.cta::before{content:'';position:absolute;inset:0;background:rgba(200,169,110,0.08);transform:translateX(-101%);transition:transform 0.4s ease}.cta:hover::before{transform:translateX(0)}.cta:hover{border-color:rgba(200,169,110,0.9);letter-spacing:0.35em}.year{font-family:'DM Mono',monospace;font-size:10px;font-weight:300;letter-spacing:0.3em;color:rgba(240,235,224,0.25)}@keyframes fu{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}</style></head><body><div class="bg"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div><div class="page"><div class="top"><span>Donoghue.co</span></div><div class="centre"><div class="name"><span>Oli Donoghue</span></div><div class="rule"></div><div class="roles">Entrepreneur &nbsp;&middot;&nbsp; NED &nbsp;&middot;&nbsp; Investor</div></div><div class="bottom"><span class="contact-label">oli@donoghue.co</span><div class="cta-wrap"><a href="https://olidonog.github.io/donoghue.co/" class="cta">Play Mode: Oli</a><span class="year">2026</span></div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Oli Donoghue</title>
+<meta name="description" content="Oli Donoghue. Rec biz builder. Non-exec. Investor. Entrepreneur. Father. Occasional golf caddy.">
+<meta name="theme-color" content="#111111">
+<meta property="og:title" content="Oli Donoghue">
+<meta property="og:description" content="Rec Biz Builder. Non-Exec. Investor. Entrepreneur. Father. Occasional Golf Caddy.">
+<style>
+  :root { --bg:#111111; --fg:#efe8dc; --u:clamp(17px, 5vw, 34px); }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { height:100%; overflow:hidden; overscroll-behavior:none; }
+  body {
+    background:var(--bg);
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    touch-action:none; -webkit-user-select:none; user-select:none;
+    -webkit-tap-highlight-color:transparent; -webkit-touch-callout:none;
+  }
+  #stage { position:fixed; inset:0; height:100dvh; overflow:hidden; z-index:1; }
+  #wipe { position:fixed; inset:0; z-index:0; pointer-events:none; }
+  .pill {
+    position:absolute; left:0; top:0; white-space:nowrap;
+    font-size:var(--u); font-weight:500; letter-spacing:-.01em; line-height:1;
+    padding:.42em .85em .46em; border-radius:999px;
+    background:var(--fg); color:var(--bg);
+    transition:background-color .6s ease, color .6s ease;
+    will-change:transform; cursor:grab; text-decoration:none; display:block;
+  }
+  .pill.name { font-size:calc(var(--u) * 1.45); font-weight:600; }
+  .pill.mail { font-size:calc(var(--u) * .78); font-weight:500; letter-spacing:.01em; }
+  .pill.drag { cursor:grabbing; }
+  #mute {
+    position:fixed; z-index:5; top:calc(env(safe-area-inset-top) + 4px); right:4px; width:44px; height:44px;
+    background:none; border:0; cursor:pointer; touch-action:manipulation; -webkit-appearance:none; appearance:none;
+  }
+  #mute::after {
+    content:""; position:absolute; left:50%; top:50%; width:12px; height:12px; margin:-6px 0 0 -6px; border-radius:50%;
+    border:2px solid var(--fg); background:var(--fg); opacity:.7; transition:background-color .6s ease, border-color .6s ease, opacity .2s;
+  }
+  #mute.off::after { background:transparent; opacity:.5; }
+  #mute:hover::after { opacity:1; }
+</style>
+</head>
+<body>
+<div id="wipe"></div>
+<button id="mute" type="button" aria-label="Sound on or off"></button>
+<div id="stage">
+  <div class="pill name">Oli Donoghue</div>
+  <div class="pill">Rec Biz Builder</div>
+  <div class="pill">Non-Exec</div>
+  <div class="pill">Investor</div>
+  <div class="pill">Entrepreneur</div>
+  <div class="pill">Father</div>
+  <div class="pill">Occasional Golf Caddy</div>
+  <a class="pill mail" href="mailto:oli@donoghue.co">oli@donoghue.co</a>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var PALETTE = [
+    ['#111111', '#efe8dc'], // ink
+    ['#efe8dc', '#111111'], // cream
+    ['#5b1521', '#f3e9dc'], // oxblood
+    ['#12372a', '#efe8dc'], // bottle green
+    ['#1f3fd6', '#f4f1ea'], // cobalt
+    ['#ff5b1f', '#111111'], // signal orange
+    ['#e9c46a', '#111111']  // ochre
+  ];
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var SP = reduce ? 0.25 : 1;
+  var root = document.documentElement, stage = document.getElementById('stage'), wipeEl = document.getElementById('wipe');
+  var W = 0, H = 0, bottomPad = 16;
+  var colourIdx = 0, wipe = null;
+
+  // ---------- pills ----------
+  var items = [];
+  Array.prototype.forEach.call(stage.querySelectorAll('.pill'), function (el) {
+    var isMail = el.classList.contains('mail');
+    items.push({ id: items.length, wallT: -1e9, el: el, mail: isMail, x: 0, y: 0, vx: 0, vy: 0, w: 0, h: 0, m: isMail ? 4 : 1, rot: 0, drag: false });
+  });
+  var mailItem = items[items.length - 1];
+
+  function measure() {
+    W = stage.clientWidth; H = stage.clientHeight;
+    items.forEach(function (p) { p.w = p.el.offsetWidth; p.h = p.el.offsetHeight; });
+  }
+  function scatter() {
+    // lay out roughly in rows with jitter, then let physics sort the overlaps
+    var n = items.length - 1, y = H * 0.1;
+    for (var i = 0; i < n; i++) {
+      var p = items[i];
+      p.x = Math.random() * Math.max(10, W - p.w);
+      p.y = (H * 0.08) + (i / n) * (H * 0.66) + (Math.random() - .5) * 20;
+      var a = Math.random() * 6.283, s = (0.5 + Math.random() * 1.2) * SP;
+      p.vx = Math.cos(a) * s; p.vy = Math.sin(a) * s;
+    }
+    mailItem.x = (W - mailItem.w) / 2; mailItem.y = H - mailItem.h - bottomPad - 40;
+    mailItem.vx = 0; mailItem.vy = 0;
+  }
+
+  // ---------- colour wipe ----------
+  function setVars(i) {
+    colourIdx = i; var c = PALETTE[i];
+    root.style.setProperty('--bg', c[0]); root.style.setProperty('--fg', c[1]);
+    document.body.style.backgroundColor = c[0];
+    var m = document.querySelector('meta[name=theme-color]'); if (m) m.setAttribute('content', c[0]);
+  }
+  function commitWipe() {
+    if (!wipe) return;
+    try { wipe.anim.cancel(); } catch (e) {}
+    setVars(wipe.idx); wipeEl.style.background = 'transparent'; wipeEl.style.clipPath = ''; wipe = null;
+  }
+  function doWipe(x, y) {
+    commitWipe();
+    var n; do { n = Math.floor(Math.random() * PALETTE.length); } while (n === colourIdx);
+    var c = PALETTE[n];
+    wipeEl.style.background = c[0];
+    var r = Math.hypot(Math.max(x, W - x), Math.max(y, H - y)) + 20;
+    var anim = wipeEl.animate(
+      [{ clipPath: 'circle(0px at ' + x + 'px ' + y + 'px)' }, { clipPath: 'circle(' + r + 'px at ' + x + 'px ' + y + 'px)' }],
+      { duration: reduce ? 1 : 750, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'forwards' }
+    );
+    wipe = { idx: n, anim: anim };
+    chime();
+    // pills recolour as the wipe passes the middle
+    setTimeout(function () { root.style.setProperty('--fg', c[1]); root.style.setProperty('--bg', c[0]); }, reduce ? 0 : 260);
+    anim.onfinish = function () { if (wipe && wipe.anim === anim) commitWipe(); };
+  }
+
+  // ---------- sound (synthesised, no files) ----------
+  var AC = window.AudioContext || window.webkitAudioContext;
+  var actx = null, master = null, noiseBuf = null, muted = false, lastTick = 0, lastNote = -1;
+  var NOTES = [293.66, 329.63, 369.99, 440, 493.88, 587.33, 659.25]; // D major pentatonic-ish, never clashes
+  var muteBtn = document.getElementById('mute');
+  try { muted = localStorage.getItem('od-muted') === '1'; } catch (e) {}
+  function paintMute() { muteBtn.classList.toggle('off', muted); }
+  paintMute();
+
+  function unlock() {
+    if (!AC) return;
+    if (!actx) {
+      try {
+        actx = new AC();
+        master = actx.createGain(); master.gain.value = muted ? 0 : 0.22; master.connect(actx.destination);
+        var len = actx.sampleRate * 0.8, b = actx.createBuffer(1, len, actx.sampleRate), d = b.getChannelData(0);
+        for (var i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
+        noiseBuf = b;
+        // iOS: a silent buffer inside a gesture fully unlocks audio
+        var src = actx.createBufferSource(); src.buffer = actx.createBuffer(1, 1, 22050); src.connect(actx.destination); src.start(0);
+      } catch (e) { actx = null; return; }
+    }
+    if (actx.state === 'suspended') actx.resume();
+  }
+  function ready() { return actx && actx.state === 'running' && !muted; }
+
+  function env(g, t, peak, a, d) {
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(peak, t + a);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + a + d);
+  }
+  // soft wooden tick. impact = closing speed (px/frame), w = pill width (wider = lower)
+  function tick(impact, w) {
+    if (!ready() || impact < 1.0) return;
+    var t = actx.currentTime, now = performance.now();
+    if (now - lastTick < 120) return; lastTick = now;
+    var f = Math.max(230, Math.min(820, 980 - w * 1.9)) * (0.96 + Math.random() * 0.08);
+    var vol = Math.min(0.55, 0.05 + impact * 0.05);
+    var o = actx.createOscillator(), g = actx.createGain();
+    o.type = 'triangle'; o.frequency.setValueAtTime(f * 1.35, t); o.frequency.exponentialRampToValueAtTime(f, t + 0.03);
+    env(g, t, vol, 0.002, 0.07); o.connect(g); g.connect(master); o.start(t); o.stop(t + 0.1);
+    // tiny noise click for the "wood"
+    var n = actx.createBufferSource(), nf = actx.createBiquadFilter(), ng = actx.createGain();
+    n.buffer = noiseBuf; nf.type = 'bandpass'; nf.frequency.value = f * 3; nf.Q.value = 1.2;
+    env(ng, t, vol * 0.5, 0.001, 0.02); n.connect(nf); nf.connect(ng); ng.connect(master); n.start(t, Math.random() * 0.5); n.stop(t + 0.04);
+  }
+  // heavier thud for the email pill landing
+  function thud(impact) {
+    if (!ready() || impact < 2) return;
+    var t = actx.currentTime, o = actx.createOscillator(), g = actx.createGain();
+    o.type = 'sine'; o.frequency.setValueAtTime(140, t); o.frequency.exponentialRampToValueAtTime(70, t + 0.12);
+    env(g, t, Math.min(0.6, 0.15 + impact * 0.04), 0.003, 0.16); o.connect(g); g.connect(master); o.start(t); o.stop(t + 0.22);
+  }
+  // soft note plus a quiet air sweep for the colour wipe
+  function chime() {
+    if (!ready()) return;
+    var t = actx.currentTime, i;
+    do { i = Math.floor(Math.random() * NOTES.length); } while (i === lastNote); lastNote = i;
+    var f = NOTES[i];
+    [1, 2.005].forEach(function (mult, k) {
+      var o = actx.createOscillator(), g = actx.createGain();
+      o.type = 'sine'; o.frequency.value = f * mult;
+      env(g, t, k ? 0.05 : 0.2, 0.008, 0.9); o.connect(g); g.connect(master); o.start(t); o.stop(t + 1);
+    });
+    var n = actx.createBufferSource(), bf = actx.createBiquadFilter(), ng = actx.createGain();
+    n.buffer = noiseBuf; bf.type = 'bandpass'; bf.Q.value = 0.8;
+    bf.frequency.setValueAtTime(500, t); bf.frequency.exponentialRampToValueAtTime(2600, t + 0.6);
+    env(ng, t, 0.07, 0.05, 0.55); n.connect(bf); bf.connect(ng); ng.connect(master); n.start(t); n.stop(t + 0.8);
+  }
+  muteBtn.addEventListener('click', function () {
+    unlock(); muted = !muted; paintMute();
+    try { localStorage.setItem('od-muted', muted ? '1' : '0'); } catch (e) {}
+    if (master) master.gain.value = muted ? 0 : 0.22;
+    if (!muted) { lastTick = 0; tick(4, 150); }
+  });
+  document.addEventListener('visibilitychange', function () { if (actx) { if (document.hidden) actx.suspend(); else if (!muted) actx.resume(); } });
+
+  // ---------- input ----------
+  var pointer = { x: -999, y: -999, mouse: false };
+  var grab = null; // {p, ox, oy, hist:[], t0, x0, y0, moved}
+  var suppressClick = false;
+
+  function hitPill(t) { var el = t && t.closest && t.closest('.pill'); if (!el) return null; for (var i = 0; i < items.length; i++) if (items[i].el === el) return items[i]; return null; }
+
+  window.addEventListener('pointerdown', function (e) {
+    unlock();
+    if (e.target.closest && e.target.closest('#mute')) return;
+    pointer.x = e.clientX; pointer.y = e.clientY; pointer.mouse = e.pointerType === 'mouse';
+    var p = hitPill(e.target);
+    grab = { p: p, ox: p ? e.clientX - p.x : 0, oy: p ? e.clientY - p.y : 0, hist: [{ x: e.clientX, y: e.clientY, t: performance.now() }], t0: performance.now(), x0: e.clientX, y0: e.clientY, moved: false, id: e.pointerId };
+    if (p) { p.drag = true; p.el.classList.add('drag'); p.vx = p.vy = 0; }
+  });
+  window.addEventListener('pointermove', function (e) {
+    pointer.x = e.clientX; pointer.y = e.clientY; pointer.mouse = e.pointerType === 'mouse';
+    if (!grab) return;
+    if (Math.hypot(e.clientX - grab.x0, e.clientY - grab.y0) > 8) grab.moved = true;
+    var now = performance.now();
+    grab.hist.push({ x: e.clientX, y: e.clientY, t: now });
+    while (grab.hist.length > 2 && now - grab.hist[0].t > 90) grab.hist.shift();
+  });
+  function release(e, cancelled) {
+    if (!grab) return;
+    var g = grab; grab = null;
+    var now = performance.now();
+    if (g.p) {
+      g.p.drag = false; g.p.el.classList.remove('drag');
+      var h = g.hist, a = h[0], b = h[h.length - 1], dt = Math.max(16, b.t - a.t);
+      var vx = (b.x - a.x) / dt * 16.7, vy = (b.y - a.y) / dt * 16.7;
+      var cap = 38, s = Math.hypot(vx, vy); if (s > cap) { vx *= cap / s; vy *= cap / s; }
+      if (g.moved && now - b.t < 120) { g.p.vx = vx * SP; g.p.vy = vy * SP; }
+    }
+    if (g.moved) { suppressClick = true; setTimeout(function () { suppressClick = false; }, 50); }
+    else if (!cancelled && now - g.t0 < 400 && !(g.p && g.p.mail)) doWipe(g.x0, g.y0);
+  }
+  window.addEventListener('pointerup', function (e) { release(e, false); });
+  window.addEventListener('pointercancel', function (e) { release(e, true); });
+  mailItem.el.addEventListener('click', function (e) { if (suppressClick) e.preventDefault(); });
+  document.addEventListener('touchmove', function (e) { e.preventDefault(); }, { passive: false });
+  document.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+  document.addEventListener('dragstart', function (e) { e.preventDefault(); });
+  window.addEventListener('resize', function () {
+    measure();
+    items.forEach(function (p) { p.x = Math.min(Math.max(0, p.x), Math.max(0, W - p.w)); p.y = Math.min(Math.max(0, p.y), Math.max(0, H - p.h)); });
+  });
+
+  // ---------- physics ----------
+  var last = performance.now(), fnow = 0, pairT = {};
+  function wallTouch(q, speed) {
+    var fresh = fnow - q.wallT > 160; q.wallT = fnow;
+    if (!fresh) return;
+    if (q.mail) thud(speed); else tick(speed * 0.8, q.w);
+  }
+  function collide(a, b) {
+    var ax = a.x + a.w / 2, ay = a.y + a.h / 2, bx = b.x + b.w / 2, by = b.y + b.h / 2;
+    var ox = (a.w + b.w) / 2 - Math.abs(ax - bx), oy = (a.h + b.h) / 2 - Math.abs(ay - by);
+    if (ox <= 0 || oy <= 0) return;
+    var key = a.id * 16 + b.id, pt = pairT[key], fresh = pt === undefined || fnow - pt > 160;
+    pairT[key] = fnow;
+    var ia = a.drag ? 0 : 1 / a.m, ib = b.drag ? 0 : 1 / b.m, sum = ia + ib;
+    if (sum === 0) return;
+    var e = 0.92;
+    if (ox < oy) {
+      var dir = ax < bx ? -1 : 1;
+      a.x += dir * ox * (ia / sum); b.x -= dir * ox * (ib / sum);
+      var closing = dir === -1 ? (a.vx - b.vx) : (b.vx - a.vx);
+      if (closing > 0) {
+        var j = (1 + e) * closing / sum;
+        a.vx -= (dir === -1 ? 1 : -1) * j * ia; b.vx += (dir === -1 ? 1 : -1) * j * ib;
+        if (fresh) tick(closing, (a.w + b.w) / 2);
+      }
+    } else {
+      var dy = ay < by ? -1 : 1;
+      a.y += dy * oy * (ia / sum); b.y -= dy * oy * (ib / sum);
+      var closingY = dy === -1 ? (a.vy - b.vy) : (b.vy - a.vy);
+      if (closingY > 0) {
+        var jy = (1 + e) * closingY / sum;
+        a.vy -= (dy === -1 ? 1 : -1) * jy * ia; b.vy += (dy === -1 ? 1 : -1) * jy * ib;
+        if (fresh) tick(closingY, (a.w + b.w) / 2);
+      }
+    }
+  }
+
+  function frame(now) {
+    var f = Math.min(2.5, (now - last) / 16.67); last = now; fnow = now;
+    var floor;
+    for (var i = 0; i < items.length; i++) {
+      var p = items[i];
+      if (p.drag && grab && grab.p === p) {
+        var tx = pointer.x - grab.ox, ty = pointer.y - grab.oy;
+        tx = Math.min(Math.max(0, tx), W - p.w); ty = Math.min(Math.max(0, ty), H - p.h);
+        p.vx = (tx - p.x) * 0.45; p.vy = (ty - p.y) * 0.45;
+        p.x += p.vx * f; p.y += p.vy * f;
+        continue;
+      }
+      if (p.mail) { p.vy += 0.35 * f; p.vx *= Math.pow(0.97, f); }
+      else {
+        // weightless drift: keep everything gently moving
+        var sp = Math.hypot(p.vx, p.vy), min = 0.5 * SP;
+        if (sp < min) { var a = Math.random() * 6.283; p.vx += Math.cos(a) * 0.06; p.vy += Math.sin(a) * 0.06; }
+        var damp = sp > 3 ? 0.985 : 0.9985; p.vx *= Math.pow(damp, f); p.vy *= Math.pow(damp, f);
+        // mouse hover nudges words away
+        if (pointer.mouse && !grab) {
+          var cx = p.x + p.w / 2, cy = p.y + p.h / 2, dx = cx - pointer.x, dy2 = cy - pointer.y, d = Math.hypot(dx, dy2) || 1;
+          if (d < 120) { p.vx += dx / d * 0.25 * f; p.vy += dy2 / d * 0.25 * f; }
+        }
+      }
+      p.x += p.vx * f; p.y += p.vy * f;
+    }
+    for (var s = 0; s < 2; s++) {
+      for (var i2 = 0; i2 < items.length; i2++) for (var j2 = i2 + 1; j2 < items.length; j2++) collide(items[i2], items[j2]);
+      // walls
+      for (var k = 0; k < items.length; k++) {
+        var q = items[k]; if (q.drag) continue;
+        if (q.x < 0) { q.x = 0; wallTouch(q, Math.abs(q.vx)); q.vx = Math.abs(q.vx) * 0.95; }
+        if (q.x > W - q.w) { q.x = W - q.w; wallTouch(q, Math.abs(q.vx)); q.vx = -Math.abs(q.vx) * 0.95; }
+        if (q.y < 0) { q.y = 0; wallTouch(q, Math.abs(q.vy)); q.vy = Math.abs(q.vy) * 0.95; }
+        floor = H - q.h - (q.mail ? bottomPad : 0);
+        if (q.y > floor) { q.y = floor; wallTouch(q, Math.abs(q.vy)); q.vy = -Math.abs(q.vy) * (q.mail ? 0.35 : 0.95); if (q.mail && Math.abs(q.vy) < 0.8) q.vy = 0; }
+      }
+    }
+    for (var m = 0; m < items.length; m++) {
+      var r = items[m];
+      var target = Math.max(-14, Math.min(14, r.vx * 1.6));
+      r.rot += (target - r.rot) * 0.12;
+      if (!(r.x === r.x) || !(r.y === r.y)) { r.x = W / 2; r.y = H / 2; r.vx = r.vy = 0; } // NaN guard
+      r.el.style.transform = 'translate3d(' + r.x.toFixed(1) + 'px,' + r.y.toFixed(1) + 'px,0) rotate(' + r.rot.toFixed(2) + 'deg)' + (r.drag ? ' scale(1.06)' : '');
+    }
+    requestAnimationFrame(frame);
+  }
+
+  // ---------- init ----------
+  setVars(Math.floor(Math.random() * PALETTE.length));
+  wipeEl.style.background = 'transparent';
+  function start() { measure(); scatter(); requestAnimationFrame(frame); }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(start); else start();
+})();
+</script>
+</body>
+</html>
